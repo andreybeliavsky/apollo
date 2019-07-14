@@ -1,0 +1,34 @@
+.section {
+	padding-top: 40px;
+	padding-bottom: 50px;
+
+	@media (min-width: 768px){
+		// add indent for prices on small devices
+		&--pb-100 {
+			padding-bottom: 100px;
+		}
+		// add indent for service-description
+		&--pt-70 {
+			padding-top: 70px;
+		}
+		&--pb-70 {
+			padding-bottom: 70px;
+		}
+	}
+
+	@media (min-width: 992px){
+		// reduce indent for service-description on middle devices
+		&--m-pb-0 {
+			padding-bottom: 0;
+		}	
+	}	
+
+	@media (min-width: 1200px) {
+		padding-top: 60px;
+		
+		// add indent for prices on desktop
+		&--pb-90 {
+			padding-bottom: 90px;
+		}
+	}
+}

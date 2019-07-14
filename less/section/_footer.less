@@ -1,0 +1,37 @@
+.footer {
+	background-color: @black;
+}
+.footer__title {
+	// block model
+	margin-bottom: 25px;
+	// typo
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.footer ul {
+	// block model
+	padding: 0;
+	margin: 0;
+	margin-bottom: 60px;
+	// typo
+	color: #fff;
+	li {
+		// block model
+		margin-bottom: 20px;
+		// typo
+		font-size: 14px;
+		line-height: 16px;
+		a {
+			color: #6c6c6c;
+			&:hover,
+			&:active,
+			&:focus {
+				color: @orange;
+				text-decoration: none;
+			}
+		}
+	}
+}

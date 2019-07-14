@@ -1,0 +1,74 @@
+.package {
+	// block model
+	padding-top: 30px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	// typo
+	color: @package;
+	// styles
+	border-radius: 7px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.5);
+	
+	// remove indent from last package 
+	&.last {
+		margin-bottom: 0;
+	}
+	
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+	}
+}
+
+.package__type {
+	// block model
+	margin-bottom: 25px;
+	// typo
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.package__price {
+	// block model
+	margin-bottom: 5px;
+	// typo
+	font-size: 48px;
+	line-height: 48px;
+	font-weight: 700;
+
+	// add currency sign
+	&:after {
+		content: "c";
+		font-family: 'als_rublregular';
+	}
+}
+.package__period {
+	// block model
+	margin-bottom: 40px;
+	// typo
+	font-size: 12px;
+	line-height: 30px;
+}
+.package__benefits {
+	margin-bottom: 55px;
+	li {
+		// block model
+		margin-bottom: 10px;
+		// typo
+		font-size: 14px;
+
+		// draw checkbox
+		&:before {
+			// block model
+			display: inline-block;
+			content:"";
+			width: 12px;
+			height: 12px;
+			margin-right: 10px;
+			// styles
+			background-image: url(../img/icon/ok-icon.png);
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+	}
+}

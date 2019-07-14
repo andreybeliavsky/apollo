@@ -1,0 +1,45 @@
+.button {
+	// block model
+	display: inline-block;
+	padding-top: 12px;
+	padding-right: 44px;
+	padding-bottom: 14px;
+	padding-left: 44px;
+	// fonts
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	// style
+	background-color: @black;
+	border-radius: 22px;
+	// other
+	cursor: pointer;
+
+	&:hover,
+	&:active,
+	&:focus {
+		// fonts
+		text-decoration: none;
+		color: #fff;
+		// style
+		background-color: @orange;
+	}
+}
+
+.button--orange {
+	// block model
+	padding-left: 30px;
+	padding-right: 30px;
+	// style
+	background-color: @yellow;
+	
+	&:hover, 
+	&:active, 
+	&:focus {
+		// fonts
+		text-decoration: none;
+		// style
+		background-color: @orange;
+	}
+}
