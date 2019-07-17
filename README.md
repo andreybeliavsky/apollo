@@ -8,4 +8,4 @@
 * Pixel Perfect
 * jQuery
 ## Демо
-<http://apollo.snow-bird.ru/>
+<https://apollo.andreybeliavsky.ru/>
